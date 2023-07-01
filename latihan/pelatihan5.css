@@ -1,0 +1,60 @@
+h1{
+    
+   
+    background-image: linear-gradient(black,pink,black) ;
+    /* to left = kiri  */
+    /* to rigth & to top */
+
+
+
+}
+
+p{
+    /* celector = p */
+    /* value     kuncinya */
+    font-size: 20px;
+    text-align: start;
+  
+    font-family: 'Times New Roman', Georgia, Roboto;
+
+}
+
+
+.liza{
+    color: rgb(1, 252, 34);
+}
+.liza:hover{
+    color:rgb(1, 0, 0);
+}
+
+.liza:active{
+    color: blue;
+    /* klik */
+}
+button{
+    padding:16px;
+    background-color: blue;
+    color:rgb(255, 255, 255);
+}
+
+button:active{
+    background-color: black;
+    color: aqua;
+}
+
+input[type=text]:focus{
+    border : 4px solid rgb(37, 208, 137);
+    color: blue;
+}
+
+.baris-pertama::first-line{
+        color: magenta;
+       
+}
+
+body{
+    background-image: url(IMG-20230615-WA0041.jpg) ;
+}
+
+
+

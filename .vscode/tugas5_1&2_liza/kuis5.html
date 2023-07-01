@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.but{
+    display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            margin-left: 67px;
+}
+.details{
+    gap: 20px;
+    padding: 12px;
+}
+
+
+input[type=email]{
+    width: 490px;
+}
+
+fieldset{
+    width: 800px;
+    background-color: pink;
+
+}
+input,button{
+    margin-bottom: 22px;
+    padding: 10px;
+}
+.update{
+    background-color: rgb(79, 79, 255);
+}
+.hapus{
+    background-color: rgb(208, 72, 72);
+}
+.simpan{
+    background-color: rgb(118, 255, 116);
+}
+
+    </style>
+</head>
+<body>
+    <fieldset>
+    <div class="container">
+        <center>
+        <div class="title"><h1>Edit form</h1></div>
+    </center>
+        <div class="content">
+            <form action="#">
+                <div class="cek1">
+                        <span class="details">Nama</span>
+                        <input type="text " placeholder="masukan nama lengkap " required>
+                       
+                        <span class="details">Nomor telepon</span>
+                        <input type="number"  placeholder="masukan nomor telepon " required>
+                        <div class="input-inbox"><br>
+                        <span class="details">Email</span>
+                        <input type="email" placeholder="masukan email " required>
+                    </div>
+                  
+            </form>
+       <div class="but">
+                    <button class="update"  onclick="alert('Selamat Data Berhasil Di Update')">Update</button>
+                    <button class="hapus" onclick="confirm('Apakah anda akan menghapus data ini ?')">Hapus</button>
+                    <button class="simpan" onclick="prompt('Masukan Nama : ')" >Simpan</button>
+                </div>
+            </fieldset>
+</body>
+</html>

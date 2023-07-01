@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasiswa BARU</title>
+    <style>
+.diri{
+
+background-color: rgb(77, 181, 242);
+border-radius: 16px;
+font-size: 20px;
+}
+
+.Asal{
+
+background-color: rgb(77, 181, 242);
+border-radius: 16px;
+font-size: 20px;
+}
+
+.pendidikan{
+
+background-color: rgb(77, 181, 242);
+border-radius: 16px;
+font-size: 20px;
+}
+.nama-lengkap,.nomor-identitas,.tempat,.tanggal,.jenis-kel{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+        }
+input,select{
+            padding: 8px;
+            border-radius: 4px;
+}
+form{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+}
+.baris-2{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 32px;
+}
+.tempat-tanggal{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap:20px;
+}
+
+
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Form Pendaftaran Mahasiswa Baru</h1>
+    </center>
+    <form>
+        <div class="diri">
+            <h3>Data Diri</h3>
+        </div>
+        <div class="baris-1">
+            <div class="nama-lengkap">
+                <label>Nama Lengkap : </label>
+                <input type="text" placeholder="Masukkan Nama Lengkap">
+            </div>
+            <div class="nomor-identitas">
+                <label for="">Nomor Indetitas(NIK)</label>
+                <input type="text" placeholder="Masukkan Nomor NIK">
+            </div>
+        </div>
+        <div class="baris-2">
+            <div class="tempat-tanggal">
+                <div class="tempat">
+                    <label for="">Tempat Lahir</label>
+                    <input type="text" placeholder="Masukkan Tanggal Lahir">
+                </div>
+                <div class="tanggal">
+                    <label for="">Tanggal Lahir</label>
+                    <input type="date">
+                </div>
+            </div>
+            <div class="jenis-kel">
+                <label for="">Jenis Kelamin :</label>
+                <select name="" id="">
+                    <option value="">Pilih</option>
+                    <option value="">Laki-laki</option>
+                    <option value="">Perempuan</option>
+
+                </select>
+            </div>
+        </div>
+    </form>
+       <div class="Asal">
+        <legend>Data Alamat Asal</legend>
+    </div>
+    <from action="">
+                <label for="alamat">Alamat</label><br>
+                <textarea name="alamat" placeholder="Masukkan Alamat" required>
+    </textarea>
+                 <label for="kodepos">Kode Pos</label>
+                 <input type="number" placeholder="Masukkan Kode Pos" required>
+
+               
+                 <label for="Provinsi">Provinsi:</label>
+                 <select name="Provinsi" required>
+                 <option value=""> Aceh</option>
+                 <option value="">Bali</option>
+                 <option value="">Jawa Barat</option>
+                 <option value="">Sumatra utara</option>
+                 </select>
+                 <label for="kab">Kabupaten:</label>
+                  <select name="kab" required>
+                 <option value="">pidie jaya</option>
+                 <option value="">gianyar</option>
+                 <option value="">cianjur</option>
+                 <option value="">tapanuli tengah</option>
+                  </select>
+                    <label for="kec">Kecamatan:</label>
+                    <select name="kec" required>
+                    <option value="">Sibolga sambas</option>
+                   <option value="">Pancuran bambu</option>
+                    <option value="">Aek horsik</option>
+                  <option value="">Pancuran Kerambir</option>
+                  <br><br>
+                    </select>
+                </from>
+            </div>
+
+                  <div class="pendidikan">
+        <legend>Data Pendidikan</legend>
+                  </div>
+                  <from action="">
+         <label for="pen">Pendidikan Terakhir :</label>
+         <select name="pen" required><br><br>
+        <option value="">PAUD/TK</option>
+         <option value="">SD</option>
+        <option value="">SMP</option>
+       <option value="">SMA/SMK</option>
+
+       <label for="nsekolah">Nama Sekolah :</label>
+        <input type="nsekolah" name="nsekolah" placeholder="Masukkan Nama Sekolah" required>
+
+        <label for="nilai">Rata-rata Nilai Raport Kelas 12:</label>
+        <input type="nilai" name="nilai" placeholder="Masukkan Rata-Rata Nilai Raport" required>
+        <br><br>
+       
+    <legend>Data-Pendidikan</legend>
+    <br>
+    <form action="">
+        <label for="Program">Pilih Program Studi 1 :</label>
+        <select name="Program" id="studi1">
+       <option value="">D3-Teknik komputer</option>
+        <option value="">S1 - Teknik informatika</option>
+       <option value="">S1 - Manajemen Akuntansi</option>
+        </select><br><br>
+
+      <label for="Prog">Pilih Program Studi 2 :</label>
+      <select name="Prog"  id="studi2">
+     <option value="">D3-Manajemen informatika</option>
+      <option value="">S1-Teknik industri</option>
+     <option value="">S1- Teknik informatika</option>
+    <option value=""></option>
+      </select>
+</from><br>
+    <button type="daftar" style="background-color: rgb(39, 164, 248)" >Daftar</button>
+    <button type="reset" style="background-color: rgb(124, 126, 128)" >Reset</button>
+
+
+</body>
+
+</html>

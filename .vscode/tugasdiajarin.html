@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas pertemuan 4 A</title>
+    <style>
+        .data-diri{
+            background-color: rgb(77, 181, 242);
+            border-radius: 16px;
+            padding: 0px ;
+        }
+        .baris-1{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap : 32px;
+        }
+        .nama-lengkap,.nomor-identitas,.tempat,.tanggal,.jenis-kel{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+        }
+        input,select{
+            padding: 8px;
+            border-radius: 4px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .baris-2{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 32px;
+        }
+        .tempat-tanggal{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap:20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Form Pendaftaran Mahasiswa Baru</h1>
+    </center>
+    <form>
+        <div class="data-diri">
+            <h3>Data Diri</h3>
+        </div>
+        <div class="baris-1">
+            <div class="nama-lengkap">
+                <label>Nama Lengkap : </label>
+                <input type="text" placeholder="Masukkan Nama Lengkap">
+            </div>
+            <div class="nomor-identitas">
+                <label for="">Nomor Indetitas(NIK)</label>
+                <input type="text" placeholder="Masukkan Nomor NIK">
+            </div>
+        </div>
+        <div class="baris-2">
+            <div class="tempat-tanggal">
+                <div class="tempat">
+                    <label for="">Tempat Lahir</label>
+                    <input type="text" placeholder="Masukkan Tanggal Lahir">
+                </div>
+                <div class="tanggal">
+                    <label for="">Tanggal Lahir</label>
+                    <input type="date">
+                </div>
+            </div>
+            <div class="jenis-kel">
+                <label for="">Jenis Kelamin :</label>
+                <select name="" id="">
+                    <option value="">Pilih</option>
+                    <option value="">Laki-laki</option>
+                    <option value="">Perempuan</option>
+
+                </select>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
